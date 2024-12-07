@@ -1,0 +1,69 @@
+/* JavaSript Battle Game Project */
+
+body {
+	background-image: url("forest.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #5B9BBF;
+	background-attachment: fixed;
+}
+
+h1 {
+	font-family: 'Nosifer', sans-serif;
+	color: lightgreen;
+	font-size: 5em;
+	text-shadow: darkorange 2px 4px 2px, black -4px -2px 1px;
+	text-align: center;
+	animation: glow 2s infinite;
+}
+
+@keyframes glow {
+	0% {
+		text-shadow: 2px 4px 2px, black 4px 5px 1px, 0 0 30px lightgreen;
+	}
+	50% {
+		text-shadow: 0 0 10px darkorange, 0 0 20px darkorange, 0 0 30px darkorange;
+		color: darkorange;
+	}
+	100% {
+		text-shadow: darkorange 2px 4px 2px, black 4px 5px 1px;
+		color: darkorange;
+	}
+}
+
+div#button {
+	background-color: darkorange;
+	font-size: 2.2em;
+	font-family: 'Jolly Lodger', cursive;
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+	box-shadow: lightblue 3px 1px 3px;
+	cursor: pointer;
+	transition: all 1s;
+	text-align: center;
+}
+
+h2#victory {
+	font-family: "New Rocker", serif;
+	font-size: 2.7em;
+	color: palegreen;
+	text-shadow: black 3px 3px 1px;
+	text-align: center;
+}
+
+h2#defeat {
+	font-family: 'Freckle Face', serif;
+	color: red;
+	font-size: 2.7em;
+	text-shadow: white 2px 2px 2px, black 3px 3px 1px;
+	text-align: center;
+}
+
+div#button:hover {
+	background-color: darkred;
+	transform: scale(1.1);
+	box-shadow: lightblue 5px 3px 6px;
+	color: black;
+}
